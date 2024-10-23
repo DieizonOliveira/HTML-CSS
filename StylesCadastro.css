@@ -1,0 +1,108 @@
+/* O * aplica uma formatação à todo o documento, no caso foi aplicado um reset */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+  
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    margin-top: o;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: #3967A2;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro' sans-serif;
+}
+
+.separator {
+    border-left: 1px solid #3967A2;
+    height: 16px;
+    margin: 0 10px;
+}
+
+li:hover {
+    color: #F6CD3E;
+}
+
+#logo{
+    width: 150px;
+    height: auto;   
+}
+
+#banner{
+    background-image: url(./IMG/HotelMar.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+footer{
+    top: 0px;
+    background-image: url(./IMG/HotelMar.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+.footer-info {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+
+  
+    background-color: transparent;
+  }
+  
+  
+  
+  .footer-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-info a {
+
+text-decoration: underline;
+  }
+  

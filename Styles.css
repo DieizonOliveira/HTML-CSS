@@ -1,0 +1,317 @@
+/* O * aplica uma formatação à todo o documento, no caso foi aplicado um reset */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #E6E4E4;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    margin-top: o;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    z-index: 100;
+   
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: #3967A2;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam thmor pro' sans-serif;
+}
+
+.separator {
+    border-left: 1px solid #3967A2;
+    height: 16px;
+    margin: 0 10px;
+}
+
+li:hover {
+    color: #F6CD3E;
+}
+
+#logo{
+    width: 150px;
+    height: auto;   
+}
+
+#banner{
+    background-image: url(./IMG/HotelMar.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.sobre{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+#apresentacao{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #3967A2;
+
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: #3967A2;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+.hospedagem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -36px;
+}
+.servicos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+
+.quartos {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      
+      .card {
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        background-position: 50%;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 0 20px 10px;
+        color: #fff;
+        font-size: 17px;
+        font-family: 'kdam thmor pro', sans-serif;
+      }
+      
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+.cafe{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10 px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'kdam thmor pro' sans-serif;
+    z-index: 50;
+}
+
+.card:hover{
+    transform: scale(1.04);
+    z-index: 50;
+}
+
+
+
+
+
+footer{
+    top: 0px;
+    background-image: url(./IMG/HotelMar.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;   
+    }
+    nav{
+        display: none;
+    }
+    #banner{
+        background-position: 40%;  
+    }    
+   
+    #trailer-container{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+.icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+        text-align: center;
+      }
+      
+      .item .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .item i {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+   
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+    
+.map-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Ajuste a altura conforme necessário para manter a proporção do mapa */
+      }
+      
+      .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+
+}
+.footer-info {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  
+  
+  .footer-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-info a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .footer-info * {
+    background-color: transparent;
+  }
